@@ -10,10 +10,6 @@ env:
     key: "value"
             
 phases:
-  install:
-    run-as: root
-    commands: {}
-    finally: {}
   pre_build:
     run-as: root
     commands:
