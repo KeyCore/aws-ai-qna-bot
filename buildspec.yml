@@ -1,0 +1,40 @@
+version: 0.2
+run-as: root
+
+env:
+  variables:
+    key: "value"
+    key: "value"
+  parameter-store:
+    key: "value"
+    key: "value"
+            
+phases:
+  install:
+    run-as: root
+    commands: {}
+    finally: {}
+  pre_build:
+    run-as: root
+    commands:
+      - npm install
+    finally:
+      - npm run bootstrap
+      - command
+  build:
+    run-as: root
+    commands:
+      - npm run up
+  post_build:
+    run-as: root
+    commands: {}
+    finally: {}
+artifacts:
+  files:
+    - '*.*'
+  discard-paths: no
+  base-directory: .
+cache:
+  paths:
+    - node_modules
+    - bin
