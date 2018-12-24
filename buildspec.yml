@@ -10,10 +10,10 @@ phases:
     run-as: root
     commands: 
       - npm install
-  pre_build:
-    run-as: root
-    commands:
-      - npm run bootstrap
+  # pre_build:
+  #   run-as: root
+  #   commands:
+  #     - npm run bootstrap
   build:
     run-as: root
     commands:
