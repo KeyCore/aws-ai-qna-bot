@@ -5,9 +5,6 @@ env:
   variables:
     key: "value"
     key: "value"
-  parameter-store:
-    key: "value"
-    key: "value"
             
 phases:
   pre_build:
