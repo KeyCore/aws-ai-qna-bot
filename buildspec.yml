@@ -20,15 +20,10 @@ phases:
       - npm install
     finally:
       - npm run bootstrap
-      - command
   build:
     run-as: root
     commands:
       - npm run up
-  post_build:
-    run-as: root
-    commands: {}
-    finally: {}
 artifacts:
   files:
     - '*.*'
